@@ -127,7 +127,7 @@ if submitted:
     
     with st.spinner("Hệ thống đang nội suy dữ liệu..."):
         try:
-            res = requests.post("http://127.0.0.1:8000/predict", json=payload).json()
+            res = requests.post("https://diabetes-ai-system.onrender.com/predict", json=payload).json()
             
             st.markdown("<br>", unsafe_allow_html=True)
             with st.container(border=True):
